@@ -2,6 +2,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif, Helvetica Neue;
     color: #777777;
+    background-image: url('../images/geometric-leaves/geometric-leaves.png');
+    background-repeat: repeat;
+    height: 100%;
 }     
 header {
     background-color: #ffffff;
@@ -24,6 +27,7 @@ p {
 .fullHeader {
     background-color: #ffffff;
     height: 115px;
+    border-bottom: #cccccc 4px solid;
 }
 li {
     float: right;
@@ -35,14 +39,6 @@ li {
 
 li:first-child {
     border: none;
-}
-
-.full {
-    background-image: url('../images/geometric-leaves/geometric-leaves.png');
-    background-repeat: repeat;
-    padding: 20px;
-    border-top: 2px solid #cccccc;
-    height: 100%;
 }
 .image {float:left;
     margin: 20px 20px 10px 0px;
@@ -58,7 +54,7 @@ section {
     padding: 20px;
     /* width: 960px; */
     width: 80%;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 h2 {
     color: #4aaaa5;
@@ -116,9 +112,9 @@ footer {
     bottom: 10px;
     background-color: #4aaaa5;
     color: #ffffff;
-    padding: 15px;
+    padding: 15px 0px;
     text-align: center;
-    width: 170px;
+    width: 100%;
 }
 .textright {
     position: absolute;
@@ -132,8 +128,79 @@ footer {
 }
 .float {
     float: left;
+    position: relative;
+    width: 200px;
+    height: 150px;
 }
 
 .floatright {
     float: right;
+    position: relative;
+    width: 200px;
+    height: 150px;
+}
+
+@media only screen and (max-width: 920px) {
+    /* section {
+        margin-right: 0px; 
+    }
+    */
+    .container {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 610px) {
+    ul {
+        width: 100%;      
+        display: inline-block;
+        margin-top: 10px;
+    }
+    li {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+  
+    .nav {
+        margin-bottom: 50px;
+    }
+    h1 {
+        margin-inline: 10px;
+    }
+    .fullHeader {
+        height: auto;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .container {
+        width: 100%;        
+    }
+    .float {
+        margin: auto; 
+        width: 100%;
+        height: 100%;
+    }
+    .floatright {
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+        float: none;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+    section {
+        width: 85%;
+    }
+    .textright {
+        width: 100%;
+    }
+    .image {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 568px) {
+    .image {
+        width: 50%;
 }
